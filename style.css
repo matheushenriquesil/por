@@ -1,0 +1,47 @@
+body{
+    background-color: #0f172a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+p{
+    text-align: center;
+}
+
+.stack{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.icons{
+    gap: 0px;
+}
+
+.box{
+    margin: 20px;
+    padding: 15px;
+    color: white;
+    border-radius: 10px;
+    background-color: bisque;
+}
+
+
+h1,h2,h3{
+    color: aliceblue;
+}
+
+p{
+    color: white;
+}
+
+li{
+    
+    color: antiquewhite;
+}
+
+button{
+    background-color: green;
+    color: white;
+}

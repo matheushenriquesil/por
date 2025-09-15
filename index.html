@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="https://avatars.githubusercontent.com/u/177049521?s=400&u=12d88be99c6fa65a3208120552501b99ae7ca835&v=4"
+         alt="minha foto" 
+         style = "width:150px; height:150px; border-radius:50%; object-fit:cover;">
+         
+        <h1>Matheus Reis</h1>
+        <p>Desenvolvedor de Sistemas</p>
+    </header>
+
+    <div id="stack">
+        <ul class="stack">
+            <li>python</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+    </div>
+
+    <div id="icons">
+        <ul class="icons">
+            <li> 
+                <a href="https://github.com/matheushenriquesil">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    
+        <button id="whatsapp">Abrir WhatsApp</button>
+
+<script>
+  function abrirWhatsApp() {
+    
+    const numero = "5519991111111";
+    const mensagem = "Olá, vim pelo site!";
+    const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
+
+    
+    window.open(url, "_blank");
+  }
+
+  const botao = document.getElementById("whatsapp");
+  botao.addEventListener("click", abrirWhatsApp);
+</script>
+        
+    </div>
+
+    <script src="https://kit.fontawesome.com/9de4de70ff.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
