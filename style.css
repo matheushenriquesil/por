@@ -1,47 +1,139 @@
-body{
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
     background-color: #0f172a;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-}
-p{
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  /* Cabeçalho */
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
     text-align: center;
-}
-
-.stack{
+  }
+  
+  header img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #6366f1; /* Roxinho legal */
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+    color: #f1f5f9;
+  }
+  
+  p {
+    color: #cbd5e1;
+    font-size: 1rem;
+  }
+  
+  /* Lista de stack */
+  #stack {
+    margin: 20px 0;
+  }
+  
+  .stack {
     list-style: none;
     display: flex;
+    flex-wrap: wrap; /* Quebra para mobile */
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .stack li {
+    background: #1e293b;
+    padding: 8px 15px;
+    border-radius: 8px;
+    color: #f8fafc;
+    font-weight: bold;
+    transition: transform 0.2s ease, background 0.3s;
+  }
+  
+  .stack li:hover {
+    background: #6366f1;
+    transform: scale(1.05);
+  }
+  
+  /* Ícones sociais */
+  #icons {
+    margin: 20px 0;
+  }
+  
+  .icons {
+    list-style: none;
+    display: flex;
+    justify-content: center;
     gap: 20px;
-}
-
-.icons{
-    gap: 0px;
-}
-
-.box{
-    margin: 20px;
-    padding: 15px;
+  }
+  
+  .icons li a {
+    font-size: 2rem;
+    color: #f8fafc;
+    transition: color 0.3s, transform 0.2s;
+  }
+  
+  .icons li a:hover {
+    color: #6366f1;
+    transform: scale(1.1);
+  }
+  
+  /* Botão do WhatsApp */
+  button {
+    background-color: #25d366;
     color: white;
-    border-radius: 10px;
-    background-color: bisque;
-}
-
-
-h1,h2,h3{
-    color: aliceblue;
-}
-
-p{
-    color: white;
-}
-
-li{
-    
-    color: antiquewhite;
-}
-
-button{
-    background-color: green;
-    color: white;
-}
+    padding: 12px 20px;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+  button:hover {
+    background-color: #1ebe57;
+    transform: scale(1.05);
+  }
+  
+  /* Responsividade */
+  @media (max-width: 600px) {
+    header img {
+      width: 90px;
+      height: 90px;
+    }
+  
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    p {
+      font-size: 0.9rem;
+    }
+  
+    .stack li {
+      font-size: 0.85rem;
+      padding: 6px 12px;
+    }
+  
+    button {
+      width: 100%;
+      max-width: 320px;
+    }
+  }
+  
